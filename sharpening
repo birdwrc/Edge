@@ -1,0 +1,8 @@
+%%Laplace operator
+sharp = imread('detection.jpg');
+filter = fspecial('laplacian');
+blurred = imfilter(sharp,filter);
+subplot(1,2,1), imshow(sharp);
+title('Original');
+subplot(1,2,2), imshow(blurred);
+title('Laplace');
